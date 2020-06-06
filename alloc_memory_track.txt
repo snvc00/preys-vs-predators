@@ -1,0 +1,15 @@
+# Allocated Memory Tracking:
+
+   App open: 19MB
+   Load image: 54MB
+   Create graph: 57MB
+   Add predators and preys (about 10 entities): 58MB
+   During simulation: ~300MB
+   After simulation: ~70MB
+
+
+# Information:
+
+              Autor: Santiago Valle
+    Memory tracking: Visual Studio 2019
+      Configuration: Debug Build    
