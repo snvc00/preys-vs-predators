@@ -24,7 +24,7 @@ namespace SEMALG_ProyectoIntegrador
             this.IName = name;
             this.ICurrentVertex = start;
             this.ICharacterClass = character;
-            this.IPicture = FormatPicture(picture);
+            this.IPicture = FormatPicture();
             this.IHuntedPreys = 0;
             this.ISpeed = 15;
             this.CollitionRange = 80;
@@ -34,7 +34,7 @@ namespace SEMALG_ProyectoIntegrador
             this.Location = ICurrentVertex.GetCirclePoint();
         }
 
-        private Bitmap FormatPicture(Bitmap picture)
+        private Bitmap FormatPicture()
         {
             Bitmap bmp = new Bitmap(300, 300);
 

@@ -11,7 +11,8 @@
 
 # Guía de Uso:
     1. Abrir el archivo ejectutable ubicado en
-       SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\bin\Debug.
+       SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\bin\Debug o
+       acceso directo.
     2. Clic en el botón "Cargar" y seleccionar una imagen con circulos
        negros que represente al grafo.
     3. Clic en el botón "Crear Grafo" y aceptar la notificación.

@@ -1,6 +1,7 @@
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\bin\Release\SEMALG_ProyectoIntegrador.exe.config
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\bin\Release\SEMALG_ProyectoIntegrador.exe
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\bin\Release\SEMALG_ProyectoIntegrador.pdb
+C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.csprojAssemblyReference.cache
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.MainWindow.resources
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.Notification.resources
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.Properties.Resources.resources
@@ -8,4 +9,3 @@ C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoInt
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.csproj.CoreCompileInputs.cache
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.exe
 C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.pdb
-C:\Users\SantiagoValle\source\repos\SEMALG_ProyectoIntegrador\SEMALG_ProyectoIntegrador\obj\Release\SEMALG_ProyectoIntegrador.csprojAssemblyReference.cache
