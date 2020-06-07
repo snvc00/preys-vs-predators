@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Management.Instrumentation;
-using System.Threading;
+using System.Threading.Tasks;
 
 namespace SEMALG_ProyectoIntegrador
 {
@@ -51,7 +49,7 @@ namespace SEMALG_ProyectoIntegrador
             if (Instance.CheckBox_Music.Checked)
                 Instance.SoundPlayer.PlayLooping();
 
-            Thread.Sleep(1000);
+            Pause(500);
 
             foreach (Prey p in Instance.Preys)
             {
@@ -215,7 +213,7 @@ namespace SEMALG_ProyectoIntegrador
                                 else
                                 {
                                     if (!PreyIsInSafePosition(Instance.Preys[j]))
-                                        if(!Instance.Preys[j].UnderPredation)
+                                        if (!Instance.Preys[j].UnderPredation)
                                             SimulationPredatorFoundPrey(Instance.Predators[i], Instance.Preys[j]);
                                 }
                             }
@@ -367,9 +365,9 @@ namespace SEMALG_ProyectoIntegrador
             Instance.Label_StateMessage.Location = new Point(IPanelMiddle.X - Instance.Label_StateMessage.Width / 2, Instance.Label_StateMessage.Location.Y);
 
             Instance.Refresh();
-            
+
             if (ILastStatus != "PreyFound")
-                Thread.Sleep(2000);
+                Pause(2000);
 
             RepaintScenario();
             ILastStatus = "PreyFound";
@@ -377,14 +375,6 @@ namespace SEMALG_ProyectoIntegrador
 
         private void SimulationPreySlayedStatus(Predator predator, Prey prey)
         {
-            if (Instance.CheckBox_Music.Checked)
-            {
-                Instance.SoundPlayer.SoundLocation = Instance.SoundtrackPath["PreySlain"];
-                Instance.SoundPlayer.Play();
-                Instance.SoundPlayer.SoundLocation = Instance.SoundtrackPath["Running"];
-                Instance.SoundPlayer.PlayLooping();
-            }
-
             Instance.PictureBox_State.Image = IStateImages["Death"];
 
             Instance.Label_StateMessage.Text = GetPreySlayedMessage(predator);
@@ -406,7 +396,7 @@ namespace SEMALG_ProyectoIntegrador
             Instance.PictureBox_Graph.Image = ITemporalFrame;
 
             Instance.Refresh();
-            Thread.Sleep(4000);
+            Pause(2000);
             Instance.Refresh();
 
             RepaintScenario();
@@ -499,5 +489,9 @@ namespace SEMALG_ProyectoIntegrador
             Instance.Refresh();
         }
 
+        private void Pause(int milliseconds)
+        {
+            Task.Delay(milliseconds).Wait();
+        }
     }
 }

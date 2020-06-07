@@ -4,8 +4,8 @@
    Load image: 54MB
    Create graph: 57MB
    Add predators and preys (about 10 entities): 58MB
-   During simulation: ~300MB
-   After simulation: ~70MB
+   During simulation: ~230MB
+   After simulation: ~65MB
 
 
 # Information:

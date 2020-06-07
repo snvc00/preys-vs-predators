@@ -31,8 +31,7 @@ namespace SEMALG_ProyectoIntegrador
             {
                 ["Running"] = "../../../resources/mainwindow/soundtrack/soundtrack-running.wav",
                 ["End-Win"] = "../../../resources/mainwindow/soundtrack/soundtrack-end-win.wav",
-                ["End-Lose"] = "../../../resources/mainwindow/soundtrack/soundtrack-end-lose.wav",
-                ["PreySlain"] = "../../../resources/mainwindow/soundtrack/soundtrack-prey-slain.wav"
+                ["End-Lose"] = "../../../resources/mainwindow/soundtrack/soundtrack-end-lose.wav"
             };
         }
 
@@ -262,6 +261,16 @@ namespace SEMALG_ProyectoIntegrador
                     }
                 }
 
+                foreach (Predator p in IPredators)
+                {
+                    if (p.Name == name)
+                    {
+                        msg = new Notification("Nombre ocupado.");
+                        msg.ShowDialog();
+                        return;
+                    }
+                }
+
                 IPreys.Add(new Prey(TemporalPicture, name, (Vertex)ComboBox_Start.SelectedItem, TemporalCharacter)); ;
                 AvailableVertices.RemoveAt(ComboBox_Start.SelectedIndex);
                 msg = new Notification("Presa creada exitosamente.");
@@ -285,6 +294,16 @@ namespace SEMALG_ProyectoIntegrador
                 string name = TextBox_Name.Text;
 
                 foreach (Predator p in IPredators)
+                {
+                    if (p.Name == name)
+                    {
+                        msg = new Notification("Nombre ocupado.");
+                        msg.ShowDialog();
+                        return;
+                    }
+                }
+
+                foreach (Prey p in IPreys)
                 {
                     if (p.Name == name)
                     {
@@ -415,8 +434,7 @@ namespace SEMALG_ProyectoIntegrador
         {
             if (ConfigurePhase == "Predator")
             {
-                ToolTip toolTip = new ToolTip();
-                toolTip.IsBalloon = true;
+                ToolTip toolTip = new ToolTip { IsBalloon = true };
                 toolTip.SetToolTip(this.PictureBox_Item1, "John Wick: Aumenta un poco todas sus estadísticas \nbase al matar a su presa.");
             }
         }
@@ -425,8 +443,7 @@ namespace SEMALG_ProyectoIntegrador
         {
             if (ConfigurePhase == "Predator")
             {
-                ToolTip toolTip = new ToolTip();
-                toolTip.IsBalloon = true;
+                ToolTip toolTip = new ToolTip { IsBalloon = true };
                 toolTip.SetToolTip(this.PictureBox_Item0, "Geralt de Rivia: Incrementa su perímetro de caza al acumular \nuna presa en su marcador.");
             }
         }
@@ -435,8 +452,7 @@ namespace SEMALG_ProyectoIntegrador
         {
             if (ConfigurePhase == "Predator")
             {
-                ToolTip toolTip = new ToolTip();
-                toolTip.IsBalloon = true;
+                ToolTip toolTip = new ToolTip { IsBalloon = true };
                 toolTip.SetToolTip(this.PictureBox_Item2, "Sekiro: Duplica su velocidad \nactual al cazar a una presa.");
             }
         }
@@ -445,8 +461,7 @@ namespace SEMALG_ProyectoIntegrador
         {
             if (ConfigurePhase == "Predator")
             {
-                ToolTip toolTip = new ToolTip();
-                toolTip.IsBalloon = true;
+                ToolTip toolTip = new ToolTip { IsBalloon = true };
                 toolTip.SetToolTip(this.PictureBox_Item3, "Eivor: Aumenta su rango de \ncolisión al acabar con una presa.");
             }
         }
