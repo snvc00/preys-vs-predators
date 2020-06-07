@@ -49,7 +49,7 @@ namespace SEMALG_ProyectoIntegrador
             if (Instance.CheckBox_Music.Checked)
                 Instance.SoundPlayer.PlayLooping();
 
-            Pause(500);
+            Pause(200);
 
             foreach (Prey p in Instance.Preys)
             {
